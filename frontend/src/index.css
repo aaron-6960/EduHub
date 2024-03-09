@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  @apply bg-zinc-900 text-white
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-violet-800 to-fuchsia-800
+}
+
+.inputdata {
+  @apply mt-1 block w-full px-3 py-2 border border-black rounded-md text-sm shadow-sm placeholder-slate-400
+  focus:outline-none focus:border-fuchsia-800 focus:ring-1 focus:ring-fuchsia-800 focus:rounded-md disabled:bg-slate-50 disabled:text-slate-500 
+  disabled:border-slate-200 disabled:shadow-none invalid:border-pink-500 invalid:text-pink-600 
+  focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  @apply bg-slate-500 rounded-md
+}
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  width: 3em;
+}
+
+*:focus{
+  border-radius: 0;
+  outline: none;
+}
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch{
+  border: 0;
+  border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner{
+  border: 0;
+}
+
+::-moz-focus-inner{
+  padding: 0;
+}

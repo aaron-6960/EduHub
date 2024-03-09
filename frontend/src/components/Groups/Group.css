@@ -1,0 +1,4 @@
+.selected {
+  transition: all 0.5s;
+  @apply bg-[#721da1]
+}

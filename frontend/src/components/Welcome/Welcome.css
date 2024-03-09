@@ -1,0 +1,8 @@
+.welcome{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: max-content;
+    text-align: center;
+    justify-content: center;
+}
